@@ -1,0 +1,27 @@
+{
+  "name": "magpie-activity",
+  "version": "1.0.0",
+  "description": "Activity timeline for Obsidian",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "lint": "eslint src",
+    "test": "node test/text.js"
+  },
+  "author": "Divyaraj Murugan",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.1.0",
+    "@typescript-eslint/parser": "^8.70.1",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.8.0",
+    "eslint-plugin-obsidianmd": "^0.4.1",
+    "globals": "^17.8.0",
+    "obsidian": "^1.13.1",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.65.0"
+  }
+}
